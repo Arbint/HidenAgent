@@ -17,8 +17,9 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 155f81af2e24dd84e8842987ef4016a2, type: 3}
   scanerPrefab: {fileID: -5037737663228513228, guid: f34d97ae90228d147b66f79c6d866284,
     type: 3}
-  range: 20
+  range: 10
   scanDuration: 0.5
   damage: 40
   damageDuration: 3
   ScanVFX: {fileID: 6312616980190476737, guid: 30514dddfba0bfe459cbd82b92a72cc6, type: 3}
+  damageVFX: {fileID: 100004, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
