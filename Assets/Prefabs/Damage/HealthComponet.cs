@@ -42,4 +42,14 @@ public class HealthComponet : MonoBehaviour
     {
         return currentHealth == maxHealth;
     }
+
+    internal float GetHealth()
+    {
+        return currentHealth;
+    }
+
+    internal float GetMaxHealth()
+    {
+        return maxHealth;
+    }
 }

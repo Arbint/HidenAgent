@@ -12,7 +12,7 @@ public class AbilityComponent : MonoBehaviour
     List<Ability> abilities = new List<Ability>();
 
     public event Action<Ability> onNewAbilityAdded;
-    public event Action<float, float> onStaminaChnaged;
+    public event Action<float, float> onStaminaChanged;
 
     private void Start()
     {
@@ -35,10 +35,20 @@ public class AbilityComponent : MonoBehaviour
         if(stamina >= staminaCost)
         {
             stamina -= staminaCost;
-            onStaminaChnaged?.Invoke(stamina, maxStamina);
+            onStaminaChanged?.Invoke(stamina, maxStamina);
             return true;
         }
 
         return false;
+    }
+
+    internal float GetStamina()
+    {
+        return stamina;
+    }
+
+    internal float GetMaxStamina()
+    {
+        return maxStamina;
     }
 }

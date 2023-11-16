@@ -11,6 +11,6 @@ public class PlayerValueGuage : MonoBehaviour
     public void SetValue(float current, float max)
     {
         fill.fillAmount = current / max;
-        text.text = ((int)current).ToString();
+        text.text = ((int)current).ToString() + "/" + ((int)max).ToString();
     }
 }

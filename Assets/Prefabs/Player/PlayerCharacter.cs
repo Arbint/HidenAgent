@@ -39,6 +39,8 @@ public class PlayerCharacter : MonoBehaviour, ITeamInterface, IMovementInterface
 
     private void Awake()
     {
+        GameplayStatics.SetPlayerGameObject(gameObject);
+
         moveStick.onInputValueChanged += MoveInputUpdated;
         aimStick.onInputValueChanged += AimInputUpdated;
         aimStick.onStickTapped += AimStickTapped;
