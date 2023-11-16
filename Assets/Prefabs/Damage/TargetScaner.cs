@@ -9,10 +9,7 @@ public class TargetScaner : MonoBehaviour
     float duration;
     [SerializeField] Transform scanPivot;
     public event Action<GameObject> onNewTargetFound;
-    private void Awake()
-    {
-        scanPivot.transform.localScale = Vector3.zero;
-    }
+
     public void Init(float range, float duration, GameObject visual)
     {
         this.range = range;

@@ -14,6 +14,7 @@ public class Fire : Ability
     [SerializeField] float damageDuration = 3f;
 
     [SerializeField] GameObject ScanVFX;
+    [SerializeField] GameObject damageVFX;
     TargetScaner scaner;
     public override void ActivateAbility()
     {
@@ -37,6 +38,6 @@ public class Fire : Ability
             return;
 
         DurationDamager damager = targetHealthComp.gameObject.AddComponent<DurationDamager>();
-        damager.Init(damageDuration, damage, targetHealthComp, OwningAblityComponet.gameObject);
+        damager.Init(damageDuration, damage, targetHealthComp, OwningAblityComponet.gameObject, damageVFX);
     }
 }
