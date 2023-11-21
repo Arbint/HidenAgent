@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: FireItem
   m_EditorClassIdentifier: 
   title: Fire
-  price: 80
-  icon: {fileID: 0}
+  price: 60
+  icon: {fileID: 21300000, guid: 155f81af2e24dd84e8842987ef4016a2, type: 3}
   item: {fileID: 11400000, guid: 210efa7c5598ba042af9fc8ddd898992, type: 2}
   description: "A FIre Ability\nDamge enemy in an circular area\nRange: 10\nStamina
     Cost: 30\nCooldown: 6\n "

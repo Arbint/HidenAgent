@@ -37,4 +37,9 @@ public class CreditComponent : MonoBehaviour
 
         return true;
     }
+
+    internal int GetCredits()
+    {
+        return credits;
+    }
 }

@@ -742,6 +742,9 @@ MonoBehaviour:
   itemName: {fileID: 1645771620403685088}
   price: {fileID: 4115326732553255573}
   description: {fileID: 7286099091368279176}
+  grayoutImage: {fileID: 2052543780876015400}
+  grayoutColor: {r: 1, g: 0, b: 0, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &5760692148165859004
 GameObject:
   m_ObjectHideFlags: 0

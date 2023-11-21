@@ -11,23 +11,34 @@ public class ShopItemWidget : MonoBehaviour
     [SerializeField] TextMeshProUGUI itemName;
     [SerializeField] TextMeshProUGUI price;
     [SerializeField] TextMeshProUGUI description;
-    internal void Init(ShopItem item)
+    [SerializeField] Image grayoutImage;
+    [SerializeField] Color grayoutColor;
+    [SerializeField] Color normalColor;
+
+    ShopItem item;
+    
+    internal void Init(ShopItem item, int credits)
     {
         icon.sprite = item.Icon;
         itemName.text = item.Title;
         price.text = "$" + item.Price.ToString();
         description.text = item.Description;
+        this.item = item;
+
+        Refresh(credits);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void Refresh(int credits)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(credits < item.Price)
+        {
+            grayoutImage.enabled = true;
+            price.color = grayoutColor;
+        }
+        else
+        {
+            grayoutImage.enabled = false;
+            price.color = normalColor;
+        }
     }
 }

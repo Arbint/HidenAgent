@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Rifle
   m_EditorClassIdentifier: 
   title: Rifle
-  price: 120
-  icon: {fileID: 0}
+  price: 50
+  icon: {fileID: 21300000, guid: aadce7caca474ae4abe680d38c5bcae5, type: 3}
   item: {fileID: 2562931518948565218, guid: 2cd15025e366e0e4baad9f3ba19cb82b, type: 3}
   description: 'A fast shooting rifle
 
