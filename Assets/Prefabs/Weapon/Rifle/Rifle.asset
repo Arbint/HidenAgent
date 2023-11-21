@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bbd0f6f81cd244eb3c38278cb2d6cd, type: 3}
   m_Name: Rifle
   m_EditorClassIdentifier: 
-  title: 
-  price: 0
+  title: Rifle
+  price: 120
   icon: {fileID: 0}
-  item: {fileID: 0}
-  description: 
+  item: {fileID: 2562931518948565218, guid: 2cd15025e366e0e4baad9f3ba19cb82b, type: 3}
+  description: 'A fast shooting rifle
+
+    Damage: 80/s
+
+    Shooting Rate: 4/s
+
+'
