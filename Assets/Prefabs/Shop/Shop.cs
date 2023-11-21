@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,5 +11,10 @@ public class Shop : ScriptableObject
     public bool TryPurchase(ShopItem item, CreditComponent buyer)
     {
         return buyer.TryPurchaseItem(item);
+    }
+
+    internal ShopItem[] GetItems()
+    {
+        return items;
     }
 }
